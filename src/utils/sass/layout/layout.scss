@@ -1,34 +1,21 @@
 @import '../abstracts/abstracts';
 
-.container,
-.article-container {
+.container {
     padding-left: em(15);
     padding-right: em(15);
     margin: 0 auto;
     width: 100%;
 }
 
-.article-container {
+.page-wrapper {
     min-height: calc(100vh - (#{em(75)} + #{em(67)} + 3em + 1.25em));
 }
 
-@media only screen and (min-width: em(730px)) {
-
-    .article-container {
-        padding-left: 0;
-        padding-right: 0;
-        max-width: em(700);
-    }
-
-}
-
-@media only screen and (min-width: em(1000px)) {
-
+@media only screen and (min-width: em(1440px)) {
     .container {
         padding-left: 0;
         padding-right: 0;
         margin: 0 auto;
-        max-width: em(960);
+        max-width: em(1400);
     }
-
 }

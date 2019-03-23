@@ -23,7 +23,8 @@ module.exports = {
 
                 // WebApp Manifest Configuration
                 appName: 'Robert Marshall Developer Portfolio', // Inferred with your package.json
-                appDescription: 'A developer portfolio for Robert Marshall showing latest projects, technologies and contact details',
+                appDescription:
+                    'A developer portfolio for Robert Marshall showing latest projects, technologies and contact details',
                 developerName: 'Robert Marshall',
                 developerURL: 'robertmarshall.dev',
                 dir: 'auto',
@@ -62,8 +63,8 @@ module.exports = {
             options: {
                 fonts: [
                     {
-                        family: `Merriweather`,
-                        variants: [`400`, `700`],
+                        family: `Montserrat`,
+                        variants: [`300`, `400`, `700`, `900`],
                     },
                 ],
             },

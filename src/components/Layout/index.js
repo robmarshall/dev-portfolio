@@ -3,19 +3,17 @@ import React from 'react'
 import Header from '../Header'
 import Footer from '../Footer'
 
-import '../../utils/sass/base/base.scss';
-import '../../utils/sass/layout/layout.scss';
+import '../../utils/sass/base/base.scss'
+import '../../utils/sass/layout/layout.scss'
 
-const Layout = ({children}) => (
-  <div>
+const Layout = ({ children }) => (
+    <div>
+        <Header />
 
-    <div className="article-container">
-        {children}
+        <div className="container page-wrapper">{children}</div>
+
+        <Footer />
     </div>
-
-    <Footer />
-
-  </div>
 )
 
 export default Layout

@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Robert Marshall",
   "dependencies": {
+    "color": "^3.1.0",
     "gatsby": "^2.1.32",
     "gatsby-image": "^2.0.33",
     "gatsby-plugin-favicon": "^3.1.5",

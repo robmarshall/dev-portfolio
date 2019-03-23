@@ -1,12 +1,14 @@
-import React from "react";
-import SEO from "../components/SEO";
-import Layout from "../components/Layout";
+import React from 'react'
+import SEO from '../components/SEO'
+import Layout from '../components/Layout'
+
+import Hero from '../components/Hero'
 
 const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" keywords={[``]} />
-    <h1>tsst</h1>
-  </Layout>
-);
+    <Layout>
+        <SEO title="Home" keywords={[``]} />
+        <Hero />
+    </Layout>
+)
 
-export default IndexPage;
+export default IndexPage

@@ -1,4 +1,4 @@
-$font-stack: "Merriweather",Georgia,Cambria,"Times New Roman",Times,serif;
+$font-stack: 'Montserrat', sans-serif;
 
 // breakpoint variables
 $lg: 1170px;
@@ -7,21 +7,50 @@ $sm: 640px;
 $xs: 480px;
 
 // Set the font sizes for all screen sizes
-$h1-font-size: (null: 43, $md: 35, $sm: 30, $xs: 28);
-$h2-font-size: (null: 34, $md: 28, $sm: 30, $xs: 24);
-$h3-font-size: (null: 30, $md: 27, $sm: 25, $xs: 22);
-$h4-font-size: (null: 24, $md: 22, $sm: 21, $xs: 21);
-$p-font-size: (null: 20, $md: 20, $sm: 19, $xs: 18);
+$h1-font-size: (
+    null: 43,
+    $md: 35,
+    $sm: 30,
+    $xs: 28,
+);
+$h2-font-size: (
+    null: 34,
+    $md: 28,
+    $sm: 30,
+    $xs: 24,
+);
+$h3-font-size: (
+    null: 30,
+    $md: 27,
+    $sm: 25,
+    $xs: 22,
+);
+$h4-font-size: (
+    null: 24,
+    $md: 22,
+    $sm: 21,
+    $xs: 21,
+);
+$p-font-size: (
+    null: 20,
+    $md: 20,
+    $sm: 19,
+    $xs: 18,
+);
 
 $body-line-height: 1.6;
 $heading-line-height: 1.25;
 
 body {
-    color: rgba(0,0,0,.84);
+    color: rgba(0, 0, 0, 0.84);
     word-wrap: break-word;
 }
 
-body,input,textarea,option,select {
+body,
+input,
+textarea,
+option,
+select {
     font-weight: 400;
     font-family: $font-stack;
     line-height: $body-line-height;
@@ -32,7 +61,12 @@ body,input,textarea,option,select {
     -moz-osx-font-smoothing: grayscale !important;
 }
 
-p, input, textarea, select, option, a {
+p,
+input,
+textarea,
+select,
+option,
+a {
     font-size: inherit;
     color: inherit;
 }
@@ -41,10 +75,24 @@ p a {
     display: inline;
 }
 
-p, h1, h2, h3, h4, h5, h6,
-ul, ol, dl, dd, figure, pre, hr,
-blockquote, form, noscript, iframe
-{
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+dl,
+dd,
+figure,
+pre,
+hr,
+blockquote,
+form,
+noscript,
+iframe {
     margin-left: 0;
     margin-right: 0;
     margin-top: 0;
@@ -74,20 +122,30 @@ p {
     line-height: $body-line-height;
 }
 
-i, .i, em {
-    font-style:italic;
+i,
+.i,
+em {
+    font-style: italic;
 }
 
-b, .b, strong {
+b,
+.b,
+strong {
     font-weight: 700;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     line-height: $heading-line-height;
     font-weight: 700;
 }
 
-ul, ol {
+ul,
+ol {
     margin-left: 1.45rem;
     margin-bottom: 1.45rem;
     list-style-position: outside;
@@ -105,11 +163,13 @@ li li {
     font-size: 1em;
 }
 
-strong, bold {
+strong,
+bold {
     font-weight: 700;
 }
 
-em, i {
+em,
+i {
     font-style: italic;
 }
 
@@ -136,10 +196,10 @@ td,
 th {
     text-align: left;
     border-bottom: 1px solid hsla(0, 0%, 0%, 0.12);
-    font-feature-settings: "tnum";
-    -moz-font-feature-settings: "tnum";
-    -ms-font-feature-settings: "tnum";
-    -webkit-font-feature-settings: "tnum";
+    font-feature-settings: 'tnum';
+    -moz-font-feature-settings: 'tnum';
+    -ms-font-feature-settings: 'tnum';
+    -webkit-font-feature-settings: 'tnum';
     padding-left: 0.96667rem;
     padding-right: 0.96667rem;
     padding-top: 0.725rem;
@@ -157,8 +217,8 @@ tt,
 code {
     background-color: hsla(0, 0%, 0%, 0.04);
     border-radius: 3px;
-    font-family: "SFMono-Regular", Consolas, "Roboto Mono", "Droid Sans Mono",
-    "Liberation Mono", Menlo, Courier, monospace;
+    font-family: 'SFMono-Regular', Consolas, 'Roboto Mono', 'Droid Sans Mono',
+        'Liberation Mono', Menlo, Courier, monospace;
     padding: 0;
     padding-top: 0.2em;
     padding-bottom: 0.2em;
@@ -174,14 +234,14 @@ code:after,
 tt:before,
 tt:after {
     letter-spacing: -0.2em;
-    content: " ";
+    content: ' ';
 }
 
 pre code:before,
 pre code:after,
 pre tt:before,
 pre tt:after {
-    content: "";
+    content: '';
 }
 
 // breakpoint mixin
@@ -190,8 +250,7 @@ pre tt:after {
         @media ($maxmin: $mq01) {
             @content;
         }
-    }
-    @else {
+    } @else {
         @media (min-width: $mq01) and (max-width: $mq2) {
             @content;
         }
@@ -210,7 +269,6 @@ pre tt:after {
         }
     }
 }
-
 
 h1 {
     @include font-size-map($h1-font-size);
