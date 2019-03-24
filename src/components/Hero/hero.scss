@@ -4,7 +4,13 @@
     margin-top: em(-20);
     padding: em(30) 0;
     min-height: 90vh;
-    background-color: #8ceaff;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#00ffdc+0,0089ff+99&1+0,0.61+100 */
+    background: linear-gradient(
+        45deg,
+        rgba(0, 255, 220, 1) 0%,
+        rgba(0, 137, 255, 0.61) 99%,
+        rgba(0, 137, 255, 0.61) 100%
+    ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
 @media only screen and (min-width: em(700px)) {
