@@ -1,6 +1,18 @@
 @import '../../utils/sass/abstracts/abstracts';
 
+.hero {
+    margin-top: em(-20);
+    padding: em(30) 0;
+    min-height: 90vh;
+    background-color: #8ceaff;
+}
+
 @media only screen and (min-width: em(700px)) {
+    .hero {
+        margin-top: em(-40);
+        padding: em(50) 0;
+    }
+
     .hero__title {
         width: 80%;
         line-height: em(25);
@@ -8,7 +20,17 @@
     }
 }
 
+@media only screen and (min-width: em(900px)) {
+    .hero {
+        margin-top: em(-115);
+        padding: em(195) 0;
+    }
+}
+
 @media only screen and (min-width: em(1000px)) {
+    .hero {
+        padding: em(260) 0 em(210) 0;
+    }
     .hero__title {
         width: 70%;
     }
