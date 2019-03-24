@@ -1,6 +1,7 @@
 @import '../../utils/sass/abstracts/abstracts';
 
 .skilllist {
+    margin: em(20) 0;
     width: 90%;
 }
 
@@ -14,21 +15,32 @@
 }
 
 .skilllist__item {
-    border-radius: em(5);
     display: inline-block;
     margin: 0 em(10) em(10) 0;
+}
+
+.skilllist__item__link {
+    position: relative;
+    border-radius: em(2);
+    text-decoration: none;
     padding: em(2) em(8);
-    background-color: grey;
+    top: 0;
+
+    &:hover {
+        top: em(5);
+    }
 }
 
 @media only screen and (min-width: em(1000px)) {
     .skilllist {
+        margin: em(40) 0;
         width: 50%;
     }
 }
 
 @media only screen and (min-width: em(1400px)) {
     .skilllist {
+        margin: em(60) 0;
         width: 40%;
     }
 }
