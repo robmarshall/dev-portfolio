@@ -10,7 +10,7 @@ const Layout = ({ children }) => (
     <div>
         <Header />
 
-        <div className="container page-wrapper">{children}</div>
+        <div className="page-wrapper">{children}</div>
 
         <Footer />
     </div>
