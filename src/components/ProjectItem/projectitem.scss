@@ -1,0 +1,15 @@
+@import '../../utils/sass/abstracts/abstracts';
+
+.project-item {
+    background-color: #fff;
+    border-radius: em(5);
+    box-shadow: 0 50px 100px rgba(50, 50, 93, 0.05),
+        0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: em(16);
+}
+
+@media only screen and (min-width: em(1000px)) {
+    .project-item {
+        width: calc(50% - #{em(16/2)});
+    }
+}
