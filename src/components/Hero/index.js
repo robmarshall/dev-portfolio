@@ -6,9 +6,9 @@ const Hero = () => (
     <div className="hero">
         <div className="container">
             <h1 className="hero__title">
-                I'm Robert Marshall, a{' '}
-                <a href="https://github.com/robmarshall">developer</a> living in
-                Leeds, currently working for{' '}
+                I'm <a href="https://twitter.com/robertmars">Robert Marshall</a>
+                , a <a href="https://github.com/robmarshall">developer</a>{' '}
+                living in Leeds, currently working for{' '}
                 <a href="https://www.fox.agency">Fox Agency</a>
             </h1>
             <SkillList />
