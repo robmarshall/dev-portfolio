@@ -3,13 +3,8 @@
 .hero {
     margin-top: em(-20);
     padding: em(30) 0;
-    min-height: 90vh;
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#00ffdc+0,0089ff+99&1+0,0.61+100 */
-    background: linear-gradient(
-        45deg,
-        rgba(0, 255, 220, 1) 0%,
-        rgba(0, 137, 255, 0.61) 100%
-    ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    min-height: 80vh;
+    background-color: #fff;
 }
 
 @media only screen and (min-width: em(700px)) {
@@ -22,6 +17,19 @@
         width: 80%;
         line-height: em(25);
         font-weight: 500;
+        font-size: em(30);
+
+        a {
+            color: #532ee7;
+            text-decoration: none;
+            top: 0;
+            position: relative;
+        }
+
+        a:hover {
+            color: darken(#532ee7, 30%);
+            top: em(2);
+        }
     }
 }
 
@@ -34,9 +42,10 @@
 
 @media only screen and (min-width: em(1000px)) {
     .hero {
-        padding: em(260) 0 em(210) 0;
+        padding: em(200) 0 em(140) 0;
     }
     .hero__title {
-        width: 70%;
+        width: 50%;
+        font-size: em(40);
     }
 }
