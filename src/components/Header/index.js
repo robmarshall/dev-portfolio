@@ -10,8 +10,6 @@ const Header = () => (
             <Link className="header__link" to="/">
                 RM
             </Link>
-
-            <Menu />
         </div>
     </header>
 )
