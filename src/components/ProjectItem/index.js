@@ -13,7 +13,12 @@ const ProjectItem = ({ name, desc, imageFileName, skills, link, source }) => {
 
     return (
         <div className="project-item">
-            <RootImage filename={imageFileName} />
+            <div className="project-item__image-wrap">
+                <RootImage
+                    className="project-item__image"
+                    filename={imageFileName}
+                />
+            </div>
             <h3>{name}</h3>
             <p>{desc}</p>
             {skillList && <ul className="project__skilllist">{skillList}</ul>}
