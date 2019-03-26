@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "name": "Robert Marshall Developer Portfolio",
+  "description": "A developer portfolio for Robert Marshall showing latest projects, technologies and contact details",
+  "icons": {
+    "60": "/icons-cd1d38910133084c2054164de2030f2e/firefox_app_60x60.png",
+    "128": "/icons-cd1d38910133084c2054164de2030f2e/firefox_app_128x128.png",
+    "512": "/icons-cd1d38910133084c2054164de2030f2e/firefox_app_512x512.png"
+  },
+  "developer": {
+    "name": "Robert Marshall",
+    "url": "robertmarshall.dev"
+  }
+}
