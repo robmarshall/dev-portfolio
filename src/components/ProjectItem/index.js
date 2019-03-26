@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import RootImage from '../RootImage'
+
 import _ from 'lodash'
 import Color from 'color'
 import './projectitem.scss'
@@ -19,7 +20,25 @@ const ProjectItem = ({ name, desc, imageFileName, skills, link, source }) => {
             title: 'SASS',
             color: '#c6538c',
         },
+        gatbsy: {
+            title: 'Gatbsy',
+            color: '#663399',
+        },
+        wordpress: {
+            title: 'WordPress',
+            color: '#207196',
+        },
+        netlify: {
+            title: 'Netlify',
+            color: '#35B2BB',
+        },
+        github: {
+            title: 'Github',
+            color: '#000000',
+        },
     }
+
+    skills.sort()
 
     const skillList = skills.map(skill => (
         <li
@@ -42,14 +61,26 @@ const ProjectItem = ({ name, desc, imageFileName, skills, link, source }) => {
                     filename={imageFileName}
                 />
             </div>
-            <div className="project-item__content-wrap">
-                <h3>{name}</h3>
-                <p>{desc}</p>
-                {skillList && (
-                    <ul className="project__skilllist">{skillList}</ul>
-                )}
-                {link && <a href={link}>Live Site</a>}
-                {source && <a href={source}>View Source</a>}
+            <div className="project-item__inner">
+                <div className="project-item__content-wrap">
+                    <h3 className="project-item__title">{name}</h3>
+                    <p className="project-item__desc">{desc}</p>
+                    {skillList && (
+                        <ul className="project__skilllist">{skillList}</ul>
+                    )}
+                </div>
+                <div className="project-item__outward-links">
+                    {link && (
+                        <a className="project-item__link" href={link}>
+                            Live Site
+                        </a>
+                    )}
+                    {source && (
+                        <a className="project-item__source" href={source}>
+                            View Source
+                        </a>
+                    )}
+                </div>
             </div>
         </div>
     )
