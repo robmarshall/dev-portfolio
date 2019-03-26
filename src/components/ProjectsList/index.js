@@ -1,5 +1,6 @@
 import React from 'react'
 import ProjectItem from '../ProjectItem'
+import _ from 'lodash'
 import './projectlist.scss'
 
 const ProjectList = () => {
@@ -13,7 +14,7 @@ const ProjectList = () => {
             source: 'source',
         },
         {
-            name: 'Burtons Safes',
+            name: 'Burtons Safesss',
             desc: 'sfsfdsf',
             image: 'url',
             skills: ['HTML5', 'CSS3', 'SASS'],
@@ -21,7 +22,7 @@ const ProjectList = () => {
             source: 'source',
         },
         {
-            name: 'Burtons Safes',
+            name: 'Burtons Safessss',
             desc: 'sfsfdsf',
             image: 'url',
             skills: ['HTML5', 'CSS3', 'SASS'],
@@ -32,6 +33,7 @@ const ProjectList = () => {
 
     const projectItems = projects.map(project => (
         <ProjectItem
+            key={_.kebabCase(project.name)}
             name={project.name}
             desc={project.desc}
             imageFileName={project.image}
@@ -42,10 +44,10 @@ const ProjectList = () => {
     ))
 
     return (
-        <div className="project-list">
-            <div className="container">
-                <h2>Featured Projects</h2>
-                <div className="project-list__wrap">{projectItems}</div>
+        <div className="projects-list">
+            <div className="tight-container">
+                <h2 className="projects-title">Featured Projects</h2>
+                <div className="projects-list__wrap">{projectItems}</div>
             </div>
         </div>
     )

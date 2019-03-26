@@ -1,11 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import RootImage from '../RootImage'
+import _ from 'lodash'
 import './projectitem.scss'
 
 const ProjectItem = ({ name, desc, imageFileName, skills, link, source }) => {
     const skillList = skills.map(skill => (
-        <li className="project__skilllist__item">{skill}</li>
+        <li key={_.kebabCase(skill)} className="project__skilllist__item">
+            {skill}
+        </li>
     ))
 
     return (
