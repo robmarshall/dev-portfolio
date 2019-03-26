@@ -1,0 +1,52 @@
+@import '../../utils/sass/abstracts/abstracts';
+
+.skilllist {
+    margin: em(20) 0;
+    width: 90%;
+}
+
+.skilllist__title {
+}
+
+.skilllist__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.skilllist__item {
+    display: inline-block;
+    margin: 0 em(10) em(10) 0;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.skilllist__item.show {
+    opacity: 1;
+}
+
+.skilllist__item__link {
+    position: relative;
+    border-radius: em(2);
+    text-decoration: none;
+    padding: em(2) em(8);
+    top: 0;
+
+    &:hover {
+        top: em(5);
+    }
+}
+
+@media only screen and (min-width: em(1000px)) {
+    .skilllist {
+        margin: em(40) 0;
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: em(1400px)) {
+    .skilllist {
+        margin: em(60) 0;
+        width: 40%;
+    }
+}

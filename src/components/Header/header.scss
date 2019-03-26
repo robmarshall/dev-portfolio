@@ -1,0 +1,29 @@
+@import '../../utils/sass/abstracts/abstracts';
+
+.header {
+    margin: em(20) 0 em(40) 0;
+}
+
+.header_wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__link {
+    text-decoration: none;
+    margin: 0;
+    font-size: em(40);
+    font-weight: 500;
+    line-height: 1em;
+    display: inline-block;
+}
+
+@media only screen and (min-width: em(900px)) {
+    .header {
+        margin: em(40) 0;
+    }
+
+    .header__link {
+        font-size: em(35);
+    }
+}

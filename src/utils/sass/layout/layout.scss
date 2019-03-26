@@ -1,0 +1,31 @@
+@import '../abstracts/abstracts';
+
+.container,
+.tight-container {
+    padding-left: em(15);
+    padding-right: em(15);
+    margin: 0 auto;
+    width: 100%;
+}
+
+.page-wrapper {
+    min-height: calc(100vh - (#{em(75)} + #{em(67)} + 3em + 1.25em));
+}
+
+@media only screen and (min-width: em(930px)) {
+    .tight-container {
+        padding-left: 0;
+        padding-right: 0;
+        margin: 0 auto;
+        max-width: em(900);
+    }
+}
+
+@media only screen and (min-width: em(1430px)) {
+    .container {
+        padding-left: 0;
+        padding-right: 0;
+        margin: 0 auto;
+        max-width: em(1400);
+    }
+}
