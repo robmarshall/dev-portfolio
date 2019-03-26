@@ -1,31 +1,35 @@
 @import '../../utils/sass/abstracts/abstracts';
 
-.project-list {
+.projects-list {
     padding: em(20) 0;
     background-color: #f6f9fc;
 }
 
-.project-list__wrap {
+.projects-title {
+    text-align: center;
+}
+
+.projects-list__wrap {
     padding: em(10) 0 0 0;
     display: flex;
-    flex-flow: wrap;
+    flex-direction: column;
     justify-content: space-between;
 }
 
 @media only screen and (min-width: em(700px)) {
-    .project-list {
+    .projects-list {
         padding: em(40) 0;
     }
-    .project-list__wrap {
+    .projects-list__wrap {
         padding: em(20) 0 0 0;
     }
 }
 
 @media only screen and (min-width: em(1200px)) {
-    .project-list {
+    .projects-list {
         padding: em(80) 0;
     }
-    .project-list__wrap {
+    .projects-list__wrap {
         padding: em(50) 0 0 0;
     }
 }
