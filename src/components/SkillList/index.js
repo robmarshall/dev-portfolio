@@ -52,12 +52,12 @@ class SkillList extends React.Component {
             { title: 'Node', color: '#026e00', link: 'https://nodejs.org/en/' },
             {
                 title: 'WordPress',
-                color: '#663399',
+                color: '#207196',
                 link: 'https://wordpress.org/',
             },
             {
                 title: 'Gatsby',
-                color: '#207196',
+                color: '#663399',
                 link: 'https://www.gatsbyjs.org/',
             },
             { title: 'Grav', color: '#977cad', link: 'https://getgrav.org/' },
