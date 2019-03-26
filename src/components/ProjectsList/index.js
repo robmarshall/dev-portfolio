@@ -1,7 +1,6 @@
 import React from 'react'
 import ProjectItem from '../ProjectItem'
 import _ from 'lodash'
-import ScrollReveal from 'scrollreveal'
 import './projectlist.scss'
 
 class ProjectList extends React.Component {
