@@ -4,7 +4,7 @@ module.exports = {
         title: `Robert Marshall Portfolio`,
         description: `A developer portfolio for Robert Marshall showing latest projects, technologies and contact details`,
         author: `@RobMarProd`,
-        url: `robertmarshall.dev`,
+        siteUrl: `https://robertmarshall.dev`,
     },
     plugins: [
         `gatsby-plugin-react-helmet`,
