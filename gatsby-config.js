@@ -63,7 +63,7 @@ module.exports = {
             options: {
                 fonts: [
                     {
-                        family: `Montserrat`,
+                        family: `Open Sans`,
                         variants: [`300`, `400`, `700`, `900`],
                     },
                 ],
