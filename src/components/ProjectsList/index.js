@@ -37,22 +37,6 @@ class ProjectList extends React.Component {
                 link: 'http://thoughtsandstuff.com',
                 source: 'https://github.com/robmarshall/gatsby-tns',
             },
-            {
-                name: 'Burtons Safesss',
-                desc: 'sfsfdsf',
-                image: 'url',
-                skills: ['html5', 'css3', 'sass'],
-                link: 'URL',
-                source: 'source',
-            },
-            {
-                name: 'Burtons Safessss',
-                desc: 'sfsfdsf',
-                image: 'url',
-                skills: ['html5', 'css3', 'sass'],
-                link: 'URL',
-                source: 'source',
-            },
         ]
 
         const projectItems = projects.map(project => (
