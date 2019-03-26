@@ -19,11 +19,15 @@ const ProjectItem = ({ name, desc, imageFileName, skills, link, source }) => {
                     filename={imageFileName}
                 />
             </div>
-            <h3>{name}</h3>
-            <p>{desc}</p>
-            {skillList && <ul className="project__skilllist">{skillList}</ul>}
-            {link && <a href={link}>Live Site</a>}
-            {source && <a href={source}>View Source</a>}
+            <div className="project-item__content-wrap">
+                <h3>{name}</h3>
+                <p>{desc}</p>
+                {skillList && (
+                    <ul className="project__skilllist">{skillList}</ul>
+                )}
+                {link && <a href={link}>Live Site</a>}
+                {source && <a href={source}>View Source</a>}
+            </div>
         </div>
     )
 }
