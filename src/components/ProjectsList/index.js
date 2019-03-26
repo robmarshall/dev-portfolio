@@ -22,12 +22,20 @@ class ProjectList extends React.Component {
     render() {
         const projects = [
             {
-                name: 'Burtons Safes',
-                desc: 'sfsfdsf',
-                image: 'url',
-                skills: ['html5', 'css3', 'sass'],
-                link: 'URL',
-                source: 'source',
+                name: 'Thoughts and Stuff Blog',
+                desc:
+                    'An ongoing project - my blog. Built with a WordPress backend, and a GatbsyJS frontend. Automatically deployed to Netlify from Github',
+                image: 'tns-project.jpg',
+                skills: [
+                    'html5',
+                    'sass',
+                    'gatbsy',
+                    'wordpress',
+                    'netlify',
+                    'github',
+                ],
+                link: 'http://thoughtsandstuff.com',
+                source: 'https://github.com/robmarshall/gatsby-tns',
             },
             {
                 name: 'Burtons Safesss',
