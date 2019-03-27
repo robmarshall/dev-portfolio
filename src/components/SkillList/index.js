@@ -37,42 +37,17 @@ class SkillList extends React.Component {
 
     render() {
         const skills = [
-            { title: 'Sass', color: '#c6538c', link: 'https://sass-lang.com/' },
-            {
-                title: 'JavaScript',
-                color: '#F7DF1E',
-                link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
-            },
-            { title: 'React', color: '#61dafb', link: 'https://reactjs.org/' },
-            {
-                title: 'ES6',
-                color: '#F7DF1E',
-                link: 'https://en.wikipedia.org/wiki/ECMAScript',
-            },
-            { title: 'Node', color: '#026e00', link: 'https://nodejs.org/en/' },
-            {
-                title: 'WordPress',
-                color: '#207196',
-                link: 'https://wordpress.org/',
-            },
-            {
-                title: 'Gatsby',
-                color: '#663399',
-                link: 'https://www.gatsbyjs.org/',
-            },
-            { title: 'Grav', color: '#977cad', link: 'https://getgrav.org/' },
-            { title: 'Gulp', color: '#E14A4D', link: 'https://gulpjs.com/' },
-            { title: 'NPM', color: '#C53635', link: 'https://www.npmjs.com/' },
-            {
-                title: 'Git',
-                color: '#000000',
-                link: 'https://github.com/robmarshall',
-            },
-            {
-                title: 'WebPack',
-                color: '#8ACFF3',
-                link: 'https://webpack.js.org/',
-            },
+            'sass',
+            'js',
+            'react',
+            'es6',
+            'node',
+            'wordpress',
+            'gatsby',
+            'grav',
+            'gulp',
+            'git',
+            'webpack',
         ]
 
         // Sort the list by title
