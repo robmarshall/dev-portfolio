@@ -2,58 +2,13 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import RootImage from '../RootImage'
 
+import thirdParty from '../../dataCollections/thirdParty'
+
 import _ from 'lodash'
 import Color from 'color'
 import './projectitem.scss'
 
 const ProjectItem = ({ name, desc, imageFileName, skills, link, source }) => {
-    const skillBank = {
-        html5: {
-            title: 'HTML5',
-            color: '#E34F26',
-        },
-        css3: {
-            title: 'CSS3',
-            color: '#005A9C',
-        },
-        sass: {
-            title: 'SASS',
-            color: '#c6538c',
-        },
-        gatbsy: {
-            title: 'Gatbsy',
-            color: '#663399',
-        },
-        wordpress: {
-            title: 'WordPress',
-            color: '#207196',
-        },
-        netlify: {
-            title: 'Netlify',
-            color: '#35B2BB',
-        },
-        github: {
-            title: 'Github',
-            color: '#000000',
-        },
-        es6: {
-            title: 'ES6',
-            color: '#F7DF1E',
-        },
-        react: {
-            title: 'React',
-            color: '#61dafb',
-        },
-        node: {
-            title: 'Node',
-            color: '#026e00',
-        },
-        graphql: {
-            title: 'Graph QL',
-            color: '#E535AB',
-        },
-    }
-
     skills.sort()
 
     const skillList = skills.map(skill => (
@@ -61,11 +16,11 @@ const ProjectItem = ({ name, desc, imageFileName, skills, link, source }) => {
             key={_.kebabCase(skill)}
             className="project__skilllist__item"
             style={{
-                backgroundColor: skillBank[skill].color,
-                color: getCorrectColour(skillBank[skill].color),
+                backgroundColor: thirdParty[skill].color,
+                color: getCorrectColour(thirdParty[skill].color),
             }}
         >
-            {skillBank[skill].title}
+            {thirdParty[skill].title}
         </li>
     ))
 
