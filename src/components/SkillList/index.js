@@ -1,5 +1,8 @@
 import React from 'react'
-import Color from 'color'
+import {
+    GetCorrectTextColour,
+    GetAccessibleBackColor,
+} from '../../utils/helpers/SkillColor'
 import thirdParty from '../../dataCollections/thirdParty'
 import './skilllist.scss'
 
@@ -20,15 +23,6 @@ class SkillList extends React.Component {
                 }
             }, 10)
         })(10)
-    }
-
-    getCorrectColour(backColour) {
-        let color = Color(backColour)
-        if (color.isLight(backColour)) {
-            return '#000'
-        } else {
-            return '#fff'
-        }
     }
 
     render() {
@@ -55,8 +49,10 @@ class SkillList extends React.Component {
                     title={`External link to ${thirdParty[skill].title}`}
                     href={thirdParty[skill].link}
                     style={{
-                        backgroundColor: thirdParty[skill].color,
-                        color: this.getCorrectColour(thirdParty[skill].color),
+                        backgroundColor: GetAccessibleBackColor(
+                            thirdParty[skill].color
+                        ),
+                        color: GetCorrectTextColour(thirdParty[skill].color),
                     }}
                 >
                     {thirdParty[skill].title}

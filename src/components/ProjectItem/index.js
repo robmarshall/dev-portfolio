@@ -2,10 +2,14 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import RootImage from '../RootImage'
 
+import {
+    GetCorrectTextColour,
+    GetAccessibleBackColor,
+} from '../../utils/helpers/SkillColor'
+
 import thirdParty from '../../dataCollections/thirdParty'
 
 import _ from 'lodash'
-import Color from 'color'
 import './projectitem.scss'
 
 const ProjectItem = ({ name, desc, imageFileName, skills, link, source }) => {
@@ -16,8 +20,10 @@ const ProjectItem = ({ name, desc, imageFileName, skills, link, source }) => {
             key={_.kebabCase(thirdParty[skill].title)}
             className="project__skilllist__item"
             style={{
-                backgroundColor: thirdParty[skill].color,
-                color: getCorrectColour(thirdParty[skill].color),
+                backgroundColor: GetAccessibleBackColor(
+                    thirdParty[skill].color
+                ),
+                color: GetCorrectTextColour(thirdParty[skill].color),
             }}
         >
             {thirdParty[skill].title}
@@ -73,15 +79,6 @@ ProjectItem.propTypes = {
     skills: PropTypes.array,
     link: PropTypes.string,
     source: PropTypes.string,
-}
-
-function getCorrectColour(backColour) {
-    let color = Color(backColour)
-    if (color.isLight(backColour)) {
-        return '#000'
-    } else {
-        return '#fff'
-    }
 }
 
 export default ProjectItem

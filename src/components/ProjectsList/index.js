@@ -8,6 +8,22 @@ class ProjectList extends React.Component {
     render() {
         const projects = [
             {
+                name: 'Developer Portfolio',
+                desc:
+                    'This site! A Gatsby driven SPA that uses leading technologies to create a super fast, 100% lighthouse audit passing portfolio website. Hosted on Github pages.',
+                image: 'tns-project.jpg',
+                skills: [
+                    'html5',
+                    'sass',
+                    'gatsby',
+                    'github',
+                    'netlify',
+                    'graphql',
+                    'es6',
+                ],
+                source: 'https://github.com/robmarshall/dev-portfolio',
+            },
+            {
                 name: 'Thoughts and Stuff Blog',
                 desc:
                     'An ongoing project - my blog. Built with a WordPress backend, and a GatbsyJS frontend. Automatically deployed to Netlify from Github',
@@ -23,20 +39,6 @@ class ProjectList extends React.Component {
                 ],
                 link: 'http://thoughtsandstuff.com',
                 source: 'https://github.com/robmarshall/gatsby-tns',
-            },
-            {
-                name: 'robertmarshall.dev',
-                desc: 'This site! Although only a portfolio, it highlights ',
-                image: 'tns-project.jpg',
-                skills: [
-                    'html5',
-                    'sass',
-                    'gatsby',
-                    'netlify',
-                    'graphql',
-                    'es6',
-                ],
-                source: 'https://github.com/robmarshall/dev-portfolio',
             },
         ]
 
