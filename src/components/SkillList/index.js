@@ -1,13 +1,9 @@
 import React from 'react'
 import Color from 'color'
-import DynamicSort from '../../utils/helpers/DynamicSort'
+import thirdParty from '../../dataCollections/thirdParty'
 import './skilllist.scss'
 
 class SkillList extends React.Component {
-    constructor(props) {
-        super(props)
-    }
-
     componentDidMount() {
         const skills = document.querySelectorAll('.skilllist__item')
         const skillsBackup = Array.from(skills)
@@ -50,21 +46,20 @@ class SkillList extends React.Component {
             'webpack',
         ]
 
-        // Sort the list by title
-        skills.sort(DynamicSort('title'))
+        skills.sort()
 
-        let skillList = skills.map(item => (
-            <li key={item.title} className="skilllist__item">
+        let skillList = skills.map(skill => (
+            <li key={thirdParty[skill].title} className="skilllist__item">
                 <a
                     className="skilllist__item__link"
-                    title={`External link to ${item.title}`}
-                    href={item.link}
+                    title={`External link to ${thirdParty[skill].title}`}
+                    href={thirdParty[skill].link}
                     style={{
-                        backgroundColor: item.color,
-                        color: this.getCorrectColour(item.color),
+                        backgroundColor: thirdParty[skill].color,
+                        color: this.getCorrectColour(thirdParty[skill].color),
                     }}
                 >
-                    {item.title}
+                    {thirdParty[skill].title}
                 </a>
             </li>
         ))
