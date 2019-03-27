@@ -1,21 +1,12 @@
 import React from 'react'
 import ProjectItem from '../ProjectItem'
 import _ from 'lodash'
+import Fade from 'react-reveal/Fade'
 import './projectlist.scss'
 
 class ProjectList extends React.Component {
     constructor(props) {
         super(props)
-    }
-
-    componentDidMount() {
-        import('scrollreveal').then(({ default: ScrollReveal }) => {
-            const sr = ScrollReveal().reveal('.project-item', {
-                distance: '50px',
-                origin: 'top',
-                delay: 250,
-            })
-        })
     }
 
     render() {
@@ -39,15 +30,17 @@ class ProjectList extends React.Component {
         ]
 
         const projectItems = projects.map(project => (
-            <ProjectItem
-                key={_.kebabCase(project.name)}
-                name={project.name}
-                desc={project.desc}
-                imageFileName={project.image}
-                skills={project.skills || []}
-                link={project.link || ''}
-                source={project.source || ''}
-            />
+            <Fade bottom>
+                <ProjectItem
+                    key={_.kebabCase(project.name)}
+                    name={project.name}
+                    desc={project.desc}
+                    imageFileName={project.image}
+                    skills={project.skills || []}
+                    link={project.link || ''}
+                    source={project.source || ''}
+                />
+            </Fade>
         ))
 
         return (
