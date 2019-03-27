@@ -26,7 +26,7 @@ class ProjectList extends React.Component {
             {
                 name: 'Thoughts and Stuff Blog',
                 desc:
-                    'An ongoing project - my blog. Built with a WordPress backend, and a GatbsyJS frontend. Automatically deployed to Netlify from Github',
+                    'An ongoing project - my blog. Built with a WordPress backend, and a GatbsyJS frontend. Automatically deployed to Netlify from Github.',
                 image: 'tns-project.jpg',
                 skills: [
                     'html5',
