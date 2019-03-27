@@ -36,6 +36,22 @@ const ProjectItem = ({ name, desc, imageFileName, skills, link, source }) => {
             title: 'Github',
             color: '#000000',
         },
+        es6: {
+            title: 'ES6',
+            color: '#F7DF1E',
+        },
+        react: {
+            title: 'React',
+            color: '#61dafb',
+        },
+        node: {
+            title: 'Node',
+            color: '#026e00',
+        },
+        graphql: {
+            title: 'Graph QL',
+            color: '#E535AB',
+        },
     }
 
     skills.sort()
