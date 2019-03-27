@@ -7,24 +7,6 @@ import thirdParty from '../../dataCollections/thirdParty'
 import './skilllist.scss'
 
 class SkillList extends React.Component {
-    componentDidMount() {
-        const skills = document.querySelectorAll('.skilllist__item')
-        const skillsBackup = Array.from(skills)
-        let rand
-        let r = []
-
-        ;(function showNextSkill() {
-            setTimeout(function() {
-                rand = Math.floor(Math.random() * skillsBackup.length)
-                r.push(skillsBackup.splice(rand, 1))
-                r[r.length - 1][0].classList.add('show')
-                if (skillsBackup.length > 0) {
-                    showNextSkill()
-                }
-            }, 10)
-        })(10)
-    }
-
     render() {
         const skills = [
             'sass',
