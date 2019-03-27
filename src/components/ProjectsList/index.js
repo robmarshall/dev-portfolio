@@ -11,7 +11,7 @@ class ProjectList extends React.Component {
                 name: 'Developer Portfolio',
                 desc:
                     'This site! A Gatsby driven SPA that uses leading technologies to create a super fast, 100% lighthouse audit passing portfolio website. Hosted on Github pages.',
-                image: 'tns-project.jpg',
+                image: 'portfolio.jpg',
                 skills: [
                     'html5',
                     'sass',
