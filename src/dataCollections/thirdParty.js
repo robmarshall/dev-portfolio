@@ -2,13 +2,14 @@ const thirdParty = {
     css3: {
         title: 'CSS3',
         color: '#005A9C',
+        link: 'https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3',
     },
     es6: {
         title: 'ES6',
         color: '#F7DF1E',
         link: 'https://en.wikipedia.org/wiki/ECMAScript',
     },
-    gatbsy: {
+    gatsby: {
         title: 'Gatbsy',
         color: '#663399',
         link: 'https://www.gatsbyjs.org/',
@@ -23,6 +24,11 @@ const thirdParty = {
         color: '#000000',
         link: 'https://github.com/robmarshall',
     },
+    git: {
+        title: 'Git',
+        color: '#000000',
+        link: 'https://github.com/robmarshall',
+    },
     gulp: {
         title: 'Gulp',
         color: '#E14A4D',
@@ -31,29 +37,32 @@ const thirdParty = {
     graphql: {
         title: 'Graph QL',
         color: '#E535AB',
+        link: 'https://graphql.org/learn/',
     },
     html5: {
         title: 'HTML5',
         color: '#E34F26',
+        link: 'https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5',
     },
     js: {
         title: 'JavaScript',
         color: '#F7DF1E',
         link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
     },
-    npm: {
-        title: 'NPM',
-        color: '#C53635',
-        link: 'https://www.npmjs.com/',
-    },
     netlify: {
         title: 'Netlify',
         color: '#35B2BB',
+        link: 'https://www.netlify.com/',
     },
     node: {
         title: 'Node',
         color: '#026e00',
         link: 'https://nodejs.org/en/',
+    },
+    npm: {
+        title: 'NPM',
+        color: '#C53635',
+        link: 'https://www.npmjs.com/',
     },
     react: {
         title: 'React',
