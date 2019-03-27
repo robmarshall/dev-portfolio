@@ -5,10 +5,6 @@ import Fade from 'react-reveal/Fade'
 import './projectlist.scss'
 
 class ProjectList extends React.Component {
-    constructor(props) {
-        super(props)
-    }
-
     render() {
         const projects = [
             {
@@ -19,7 +15,7 @@ class ProjectList extends React.Component {
                 skills: [
                     'html5',
                     'sass',
-                    'gatbsy',
+                    'gatsby',
                     'wordpress',
                     'netlify',
                     'graphql',
@@ -35,7 +31,7 @@ class ProjectList extends React.Component {
                 skills: [
                     'html5',
                     'sass',
-                    'gatbsy',
+                    'gatsby',
                     'netlify',
                     'graphql',
                     'es6',
@@ -45,9 +41,8 @@ class ProjectList extends React.Component {
         ]
 
         const projectItems = projects.map(project => (
-            <Fade bottom>
+            <Fade bottom key={_.kebabCase(project.name)}>
                 <ProjectItem
-                    key={_.kebabCase(project.name)}
                     name={project.name}
                     desc={project.desc}
                     imageFileName={project.image}
