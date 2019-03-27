@@ -13,7 +13,7 @@ const ProjectItem = ({ name, desc, imageFileName, skills, link, source }) => {
 
     const skillList = skills.map(skill => (
         <li
-            key={_.kebabCase(skill)}
+            key={_.kebabCase(thirdParty[skill].title)}
             className="project__skilllist__item"
             style={{
                 backgroundColor: thirdParty[skill].color,
