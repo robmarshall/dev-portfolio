@@ -22,10 +22,25 @@ class ProjectList extends React.Component {
                     'gatbsy',
                     'wordpress',
                     'netlify',
-                    'github',
+                    'graphql',
+                    'es6',
                 ],
                 link: 'http://thoughtsandstuff.com',
                 source: 'https://github.com/robmarshall/gatsby-tns',
+            },
+            {
+                name: 'robertmarshall.dev',
+                desc: 'This site! Although only a portfolio, it highlights ',
+                image: 'tns-project.jpg',
+                skills: [
+                    'html5',
+                    'sass',
+                    'gatbsy',
+                    'netlify',
+                    'graphql',
+                    'es6',
+                ],
+                source: 'https://github.com/robmarshall/dev-portfolio',
             },
         ]
 
