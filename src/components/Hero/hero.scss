@@ -7,6 +7,22 @@
     background-color: #fff;
 }
 
+.hero__title {
+    line-height: em(25);
+    font-weight: 500;
+
+    a {
+        color: #532ee7;
+        text-decoration: none;
+        top: 0;
+        position: relative;
+    }
+    a:hover {
+        color: darken(#532ee7, 30%);
+        top: em(2);
+    }
+}
+
 @media only screen and (min-width: em(700px)) {
     .hero {
         margin-top: em(-40);
@@ -15,21 +31,7 @@
 
     .hero__title {
         width: 80%;
-        line-height: em(25);
-        font-weight: 500;
         font-size: em(30);
-
-        a {
-            color: #532ee7;
-            text-decoration: none;
-            top: 0;
-            position: relative;
-        }
-
-        a:hover {
-            color: darken(#532ee7, 30%);
-            top: em(2);
-        }
     }
 }
 
