@@ -36,6 +36,8 @@ class SkillList extends React.Component {
                         ),
                         color: GetCorrectTextColour(thirdParty[skill].color),
                     }}
+                    title="This link will open a new tab to the skill information page"
+                    target="_blank"
                 >
                     {thirdParty[skill].title}
                 </a>

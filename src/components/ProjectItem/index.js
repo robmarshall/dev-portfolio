@@ -48,12 +48,22 @@ const ProjectItem = ({ name, desc, imageFileName, skills, link, source }) => {
                 </div>
                 <div className="project-item__outward-links">
                     {link && (
-                        <a className="project-item__link" href={link}>
+                        <a
+                            className="project-item__link"
+                            href={link}
+                            target="_blank"
+                            title="This link will open up the live site in a new tab"
+                        >
                             Live Site
                         </a>
                     )}
                     {source && (
-                        <a className="project-item__source" href={source}>
+                        <a
+                            className="project-item__source"
+                            href={source}
+                            target="_blank"
+                            title="This link will open up the source code in a new tab"
+                        >
                             View Source
                         </a>
                     )}
