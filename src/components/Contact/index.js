@@ -7,7 +7,7 @@ const Contact = () => (
             <div className="contact__email-link">
                 Want to work together?{' '}
                 <a
-                    href="mailto:robertmarshallproductions@gmail.com"
+                    href="mailto:hello@robertmarshall.dev"
                     className="contact__email-link__link"
                     title="I am happy to talk though whatever you need. Pop me a message and lets have a chat!"
                 >
@@ -40,7 +40,7 @@ const Contact = () => (
                     LinkedIn
                 </a>
                 <a
-                    href="mailto:robertmarshallproductions@gmail.com"
+                    href="mailto:hello@robertmarshall.dev"
                     className="contact__sub-links__link"
                     title="Email Rob to have a chat!"
                 >
