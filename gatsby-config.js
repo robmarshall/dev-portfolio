@@ -1,3 +1,7 @@
+require('dotenv').config({
+    path: `.env.development`,
+})
+
 module.exports = {
     siteMetadata: {
         locale: `en_GB`, // Fallback
