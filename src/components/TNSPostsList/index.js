@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 import Fade from 'react-reveal/Fade'
 import './tnsposts.scss'
 
@@ -35,7 +36,7 @@ class TNSPostsList extends Component {
         let postBlocks = posts.map(post => (
             <Fade bottom key={post.slug}>
                 <div className="tnsposts__single">
-                    <a
+                    <OutboundLink
                         className="tnsposts__single__link"
                         href={'https://www.thoughtsandstuff.com/' + post.slug}
                         target="_blank"
@@ -52,7 +53,7 @@ class TNSPostsList extends Component {
                                 __html: post.excerpt.rendered,
                             }}
                         />
-                    </a>
+                    </OutboundLink>
                 </div>
             </Fade>
         ))
