@@ -1,7 +1,7 @@
 @import '../../utils/sass/abstracts/abstracts';
 
 .skilllist {
-    margin: em(20) 0;
+    margin: em(30) 0 em(20) 0;
     width: 90%;
 }
 
@@ -17,12 +17,6 @@
 .skilllist__item {
     display: inline-block;
     margin: 0 em(10) em(10) 0;
-    opacity: 0;
-    transition: opacity 0.5s;
-}
-
-.skilllist__item.show {
-    opacity: 1;
 }
 
 .skilllist__item__link {

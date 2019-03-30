@@ -1,6 +1,5 @@
 import { Link } from 'gatsby'
 import React from 'react'
-import Menu from '../Menu'
 import './header.scss'
 import '../../utils/sass/layout/layout.scss'
 

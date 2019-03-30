@@ -1,37 +1,41 @@
 import React from 'react'
 import ProjectItem from '../ProjectItem'
 import _ from 'lodash'
+import Fade from 'react-reveal/Fade'
 import './projectlist.scss'
 
 class ProjectList extends React.Component {
-    constructor(props) {
-        super(props)
-    }
-
-    componentDidMount() {
-        import('scrollreveal').then(({ default: ScrollReveal }) => {
-            const sr = ScrollReveal().reveal('.project-item', {
-                distance: '50px',
-                origin: 'top',
-                delay: 250,
-            })
-        })
-    }
-
     render() {
         const projects = [
             {
+                name: 'Developer Portfolio',
+                desc:
+                    'This site! A Gatsby driven SPA that uses leading technologies to create a super fast, 100% lighthouse audit passing portfolio website. Hosted on Github pages.',
+                image: 'portfolio.jpg',
+                skills: [
+                    'html5',
+                    'sass',
+                    'gatsby',
+                    'github',
+                    'netlify',
+                    'graphql',
+                    'es6',
+                ],
+                source: 'https://github.com/robmarshall/dev-portfolio',
+            },
+            {
                 name: 'Thoughts and Stuff Blog',
                 desc:
-                    'An ongoing project - my blog. Built with a WordPress backend, and a GatbsyJS frontend. Automatically deployed to Netlify from Github',
+                    'An ongoing project - my blog. Built with a WordPress backend, and a GatbsyJS frontend. Automatically deployed to Netlify from Github.',
                 image: 'tns-project.jpg',
                 skills: [
                     'html5',
                     'sass',
-                    'gatbsy',
+                    'gatsby',
                     'wordpress',
                     'netlify',
-                    'github',
+                    'graphql',
+                    'es6',
                 ],
                 link: 'http://thoughtsandstuff.com',
                 source: 'https://github.com/robmarshall/gatsby-tns',
@@ -39,15 +43,16 @@ class ProjectList extends React.Component {
         ]
 
         const projectItems = projects.map(project => (
-            <ProjectItem
-                key={_.kebabCase(project.name)}
-                name={project.name}
-                desc={project.desc}
-                imageFileName={project.image}
-                skills={project.skills || []}
-                link={project.link || ''}
-                source={project.source || ''}
-            />
+            <Fade bottom key={_.kebabCase(project.name)}>
+                <ProjectItem
+                    name={project.name}
+                    desc={project.desc}
+                    imageFileName={project.image}
+                    skills={project.skills || []}
+                    link={project.link || ''}
+                    source={project.source || ''}
+                />
+            </Fade>
         ))
 
         return (
