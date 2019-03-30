@@ -1,0 +1,71 @@
+@import '../../utils/sass/abstracts/abstracts';
+
+.contact {
+    padding: em(20) 0;
+    background-color: #f6f9fc;
+}
+
+.contact__email-link {
+    margin: 0 0 em(10) 0;
+    font-size: em(26);
+    text-align: center;
+}
+
+.contact__email-link__link {
+    color: #532ee7;
+    text-decoration: none;
+    top: 0;
+    position: relative;
+    &:hover {
+        color: darken(#532ee7, 30%);
+        top: em(2);
+    }
+}
+
+.contact__sub-links {
+    margin: em(30) 0 0 0;
+}
+
+.contact__sub-links__link {
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    top: 0;
+    position: relative;
+    margin: em(10) em(10) 0 0;
+    &:hover {
+        top: em(5);
+    }
+}
+
+@media only screen and (min-width: em(700px)) {
+    .contact {
+        padding: em(30) 0;
+    }
+
+    .contact__email-link {
+        font-size: em(30);
+        text-align: left;
+    }
+
+    .contact__sub-links__link {
+        text-align: left;
+        display: inline-block;
+    }
+
+    .contact__sub-links__link {
+        margin: em(10) em(20) 0 0;
+    }
+}
+
+@media only screen and (min-width: em(1000px)) {
+    .contact {
+        padding: em(80) 0;
+    }
+    .contact__email-link {
+        font-size: em(40);
+    }
+    .contact__sub-links__link {
+        margin: em(10) em(30) 0 0;
+    }
+}
