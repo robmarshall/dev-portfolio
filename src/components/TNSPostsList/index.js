@@ -5,6 +5,7 @@ import './tnsposts.scss'
 
 class TNSPostsList extends Component {
     state = {
+        postsExist: false,
         posts: [],
     }
 
@@ -16,6 +17,7 @@ class TNSPostsList extends Component {
             .then(posts => {
                 this.setState({
                     posts: posts.data,
+                    postsExist: true,
                 })
             })
             .catch(error => {
@@ -28,7 +30,7 @@ class TNSPostsList extends Component {
     }
 
     render() {
-        const { posts } = this.state
+        const { posts, postsExist } = this.state
 
         let postBlocks = posts.map(post => (
             <Fade bottom key={post.slug}>
@@ -56,12 +58,16 @@ class TNSPostsList extends Component {
         ))
 
         return (
-            <div className="tnsposts__list">
-                <div className="tight-container">
-                    <h2 className="tnsposts__title">Most Recent Thoughts</h2>
-                    {postBlocks}
+            postsExist && (
+                <div className="tnsposts__list">
+                    <div className="tight-container">
+                        <h2 className="tnsposts__title">
+                            Most Recent Thoughts
+                        </h2>
+                        {postBlocks}
+                    </div>
                 </div>
-            </div>
+            )
         )
     }
 }
