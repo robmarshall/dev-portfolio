@@ -38,6 +38,7 @@ class SkillList extends React.Component {
                     }}
                     title="This link will open a new tab to the skill information page"
                     target="_blank"
+                    rel="noopener noreferrer"
                 >
                     {thirdParty[skill].title}
                 </a>

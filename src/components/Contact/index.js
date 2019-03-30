@@ -19,6 +19,7 @@ const Contact = () => (
                     href="https://github.com/robmarshall"
                     className="contact__sub-links__link"
                     target="_blank"
+                    rel="noopener noreferrer"
                     title="This link will open a new tab to GitHub"
                 >
                     GitHub
@@ -27,6 +28,7 @@ const Contact = () => (
                     href="https://codepen.io/RobertMarshall"
                     className="contact__sub-links__link"
                     target="_blank"
+                    rel="noopener noreferrer"
                     title="This link will open a new tab to CodePen"
                 >
                     CodePen
@@ -35,6 +37,7 @@ const Contact = () => (
                     href="https://www.linkedin.com/in/robert-marshall-86775883/"
                     className="contact__sub-links__link"
                     target="_blank"
+                    rel="noopener noreferrer"
                     title="This link will open a new tab to LinkedIn"
                 >
                     LinkedIn

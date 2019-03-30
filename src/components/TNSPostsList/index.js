@@ -37,6 +37,7 @@ class TNSPostsList extends Component {
                         className="tnsposts__single__link"
                         href={'https://www.thoughtsandstuff.com/' + post.slug}
                         target="_blank"
+                        rel="noopener noreferrer"
                         title="This link will open up a new tab to Thoughts and Stuff.com"
                     >
                         <h3 className="tnsposts__single__title">

@@ -52,6 +52,7 @@ const ProjectItem = ({ name, desc, imageFileName, skills, link, source }) => {
                             className="project-item__link"
                             href={link}
                             target="_blank"
+                            rel="noopener noreferrer"
                             title="This link will open up the live site in a new tab"
                         >
                             Live Site
@@ -62,6 +63,7 @@ const ProjectItem = ({ name, desc, imageFileName, skills, link, source }) => {
                             className="project-item__source"
                             href={source}
                             target="_blank"
+                            rel="noopener noreferrer"
                             title="This link will open up the source code in a new tab"
                         >
                             View Source

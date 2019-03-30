@@ -10,6 +10,7 @@ const Hero = () => (
                 <a
                     href="https://twitter.com/robertmars"
                     target="_blank"
+                    rel="noopener noreferrer"
                     title="This link will open up Twitter in a new tab"
                 >
                     Robert Marshall
@@ -18,6 +19,7 @@ const Hero = () => (
                 <a
                     href="https://github.com/robmarshall"
                     target="_blank"
+                    rel="noopener noreferrer"
                     title="This link will open up GitHub in a new tab"
                 >
                     fullstack developer
@@ -26,6 +28,7 @@ const Hero = () => (
                 <a
                     href="https://www.fox.agency"
                     target="_blank"
+                    rel="noopener noreferrer"
                     title="This link will open up the Fox Agency Website in a new tab"
                 >
                     Fox Agency
