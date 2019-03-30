@@ -87,7 +87,7 @@ ProjectItem.defaultProps = {
 ProjectItem.propTypes = {
     name: PropTypes.string.isRequired,
     desc: PropTypes.string.isRequired,
-    image: PropTypes.array.isRequired,
+    image: PropTypes.string.isRequired,
     skills: PropTypes.array,
     link: PropTypes.string,
     source: PropTypes.string,
