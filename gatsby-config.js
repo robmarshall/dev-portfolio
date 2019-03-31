@@ -71,6 +71,7 @@ module.exports = {
                         variants: [`300`, `400`, `700`, `900`],
                     },
                 ],
+                cache: false,
             },
         },
         {
@@ -78,7 +79,7 @@ module.exports = {
             options: {
                 trackingId: process.env.GOOGLE_TRACKING_ID || '',
                 // Puts tracking script in the head instead of the body
-                head: true,
+                head: false,
                 // Enables Google Optimize using your container Id
                 optimizeId: process.env.GOOGLE_OPTIMIZE_ID || '',
                 // Enables Google Optimize Experiment ID
