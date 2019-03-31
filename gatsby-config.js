@@ -71,7 +71,6 @@ module.exports = {
                         variants: [`300`, `400`, `700`, `900`],
                     },
                 ],
-                cache: false,
             },
         },
         {
