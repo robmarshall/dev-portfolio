@@ -1,7 +1,3 @@
-require('dotenv').config({
-    path: `.env.development`,
-})
-
 module.exports = {
     siteMetadata: {
         locale: `en_GB`, // Fallback
@@ -76,15 +72,9 @@ module.exports = {
         {
             resolve: `gatsby-plugin-google-analytics`,
             options: {
-                trackingId: process.env.GOOGLE_TRACKING_ID || '',
+                trackingId: 'UA-51311920-6',
                 // Puts tracking script in the head instead of the body
                 head: false,
-                // Enables Google Optimize using your container Id
-                optimizeId: process.env.GOOGLE_OPTIMIZE_ID || '',
-                // Enables Google Optimize Experiment ID
-                experimentId: process.env.GOOGLE_EXPERIMENT_ID || '',
-                // Set Variation ID. 0 for original 1,2,3....
-                variationId: process.env.GOOGLE_VARIATION_ID || '',
             },
         },
         'gatsby-plugin-offline',
