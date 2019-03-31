@@ -54,7 +54,9 @@ class TNSPostsListPreset extends Component {
         return (
             <div className="tnsposts__list">
                 <div className="tight-container">
-                    <h2 className="tnsposts__title">Some Thoughts</h2>
+                    <Fade bottom>
+                        <h2 className="tnsposts__title">Some Thoughts</h2>
+                    </Fade>
                     {postBlocks}
                 </div>
             </div>
