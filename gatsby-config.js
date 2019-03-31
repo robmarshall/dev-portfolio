@@ -87,5 +87,6 @@ module.exports = {
                 variationId: process.env.GOOGLE_VARIATION_ID || '',
             },
         },
+        'gatsby-plugin-offline',
     ],
 }
