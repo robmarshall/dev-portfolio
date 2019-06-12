@@ -7,6 +7,13 @@ class TNSPostsListPreset extends Component {
     render() {
         const postList = [
             {
+                title: 'GatsbyJS and WordPress Gives Website a Lease of Life',
+                slug:
+                    'gatsbyjs-and-wordpress-gives-thoughts-and-stuff-a-lease-of-life',
+                desc:
+                    '<p>There seems to be only one option when needing a fast website – having a static site. I have been a massive advocate of static sites in principle for a very long time. This article explains how I turned my sluggish WordPress blog, into a speedy machine.</p>',
+            },
+            {
                 title: 'The Rise of the Content Mesh',
                 slug: 'the-rise-of-the-content-mesh',
                 desc:
