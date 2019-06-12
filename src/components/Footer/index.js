@@ -1,17 +1,24 @@
 import React from 'react'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 import './footer.scss'
 import '../../utils/sass/layout/layout.scss'
 
 const Footer = ({ siteTitle }) => (
     <footer className="footer">
         <div className="container footer__wrap">
-            <a href="https://github.com/robmarshall" className="footer__link">
+            <OutboundLink
+                href="https://github.com/robmarshall"
+                className="footer__link"
+            >
                 Robert Marshall
-            </a>{' '}
+            </OutboundLink>{' '}
             &{' '}
-            <a href="https://www.gatsbyjs.org/" className="footer__link">
+            <OutboundLink
+                href="https://www.gatsbyjs.org/"
+                className="footer__link"
+            >
                 Gatsby
-            </a>
+            </OutboundLink>
         </div>
     </footer>
 )

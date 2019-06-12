@@ -1,0 +1,43 @@
+@import '../../utils/sass/abstracts/abstracts';
+
+.tnsposts__list {
+    padding: em(30) 0;
+    list-style: none;
+}
+
+.tnsposts__single {
+    margin-top: em(15);
+}
+
+.tnsposts__single__link {
+    position: relative;
+    text-decoration: none;
+    top: 0;
+
+    &:hover {
+        top: em(5);
+    }
+}
+
+.tnsposts__single__title {
+    font-weight: 500;
+}
+
+.tnsposts__single__desc p {
+    font-size: em(18);
+}
+
+@media only screen and (min-width: em(730px)) {
+    .tnsposts__list {
+        padding: em(40) 0;
+    }
+    .tnsposts__single {
+        margin-top: em(40);
+    }
+}
+
+@media only screen and (min-width: em(1200px)) {
+    .tnsposts__list {
+        padding: em(80) 0;
+    }
+}

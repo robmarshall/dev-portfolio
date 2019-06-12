@@ -24,6 +24,15 @@ class ProjectList extends React.Component {
                 source: 'https://github.com/robmarshall/dev-portfolio',
             },
             {
+                name: 'Pure CSS & HTML Dino',
+                desc:
+                    'I created a static version of this dinosaur a few years ago in Illustrator. Thought it would be a fun challenge to give him a new lease of life.',
+                image: 'cssdino.jpg',
+                skills: ['css3', 'html5'],
+                link: 'https://robmarshall.github.io/css-dino/index.html',
+                source: 'https://github.com/robmarshall/css-dino',
+            },
+            {
                 name: 'Thoughts and Stuff Blog',
                 desc:
                     'An ongoing project - my blog. Built with a WordPress backend, and a GatbsyJS frontend. Automatically deployed to Netlify from Github.',

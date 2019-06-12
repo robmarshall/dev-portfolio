@@ -1,4 +1,5 @@
 import React from 'react'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 import {
     GetCorrectTextColour,
     GetAccessibleBackColor,
@@ -26,7 +27,7 @@ class SkillList extends React.Component {
 
         let skillList = skills.map(skill => (
             <li key={thirdParty[skill].title} className="skilllist__item">
-                <a
+                <OutboundLink
                     className="skilllist__item__link"
                     title={`External link to ${thirdParty[skill].title}`}
                     href={thirdParty[skill].link}
@@ -40,7 +41,7 @@ class SkillList extends React.Component {
                     rel="noopener noreferrer"
                 >
                     {thirdParty[skill].title}
-                </a>
+                </OutboundLink>
             </li>
         ))
 

@@ -1,10 +1,12 @@
 import React, { Component } from 'react'
 import axios from 'axios'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 import Fade from 'react-reveal/Fade'
 import './tnsposts.scss'
 
 class TNSPostsList extends Component {
     state = {
+        postsExist: false,
         posts: [],
     }
 
@@ -16,6 +18,7 @@ class TNSPostsList extends Component {
             .then(posts => {
                 this.setState({
                     posts: posts.data,
+                    postsExist: true,
                 })
             })
             .catch(error => {
@@ -28,12 +31,12 @@ class TNSPostsList extends Component {
     }
 
     render() {
-        const { posts } = this.state
+        const { posts, postsExist } = this.state
 
         let postBlocks = posts.map(post => (
             <Fade bottom key={post.slug}>
                 <div className="tnsposts__single">
-                    <a
+                    <OutboundLink
                         className="tnsposts__single__link"
                         href={'https://www.thoughtsandstuff.com/' + post.slug}
                         target="_blank"
@@ -50,18 +53,22 @@ class TNSPostsList extends Component {
                                 __html: post.excerpt.rendered,
                             }}
                         />
-                    </a>
+                    </OutboundLink>
                 </div>
             </Fade>
         ))
 
         return (
-            <div className="tnsposts__list">
-                <div className="tight-container">
-                    <h2 className="tnsposts__title">Most Recent Thoughts</h2>
-                    {postBlocks}
+            postsExist && (
+                <div className="tnsposts__list">
+                    <div className="tight-container">
+                        <h2 className="tnsposts__title">
+                            Most Recent Thoughts
+                        </h2>
+                        {postBlocks}
+                    </div>
                 </div>
-            </div>
+            )
         )
     }
 }
