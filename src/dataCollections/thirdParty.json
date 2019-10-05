@@ -74,6 +74,11 @@
     "color": "#61dafb",
     "link": "https://reactjs.org/"
   },
+  "restapi": {
+    "title": "REST API",
+    "color": "#2f3a28",
+    "link": "https://en.wikipedia.org/wiki/Representational_state_transfer"
+  },
   "sass": {
     "title": "SASS",
     "color": "#c6538c",
