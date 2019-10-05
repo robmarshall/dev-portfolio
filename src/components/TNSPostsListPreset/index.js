@@ -32,26 +32,24 @@ class TNSPostsListPreset extends Component {
     ];
 
     let postBlocks = postList.map(post => (
-      <Fade bottom key={post.slug}>
-        <div className="tnsposts__single">
-          <OutboundLink
-            className="tnsposts__single__link"
-            href={"https://www.thoughtsandstuff.com/" + post.slug}
-            target="_blank"
-            rel="noopener noreferrer"
-            title="This link will open up a new tab to Thoughts and Stuff.com"
-          >
-            <h3 className="tnsposts__single__title">{post.title}</h3>
+      <div className="tnsposts__single">
+        <OutboundLink
+          className="tnsposts__single__link"
+          href={"https://www.thoughtsandstuff.com/" + post.slug}
+          target="_blank"
+          rel="noopener noreferrer"
+          title="This link will open up a new tab to Thoughts and Stuff.com"
+        >
+          <h3 className="tnsposts__single__title">{post.title}</h3>
 
-            <div
-              className="tnsposts__single__desc"
-              dangerouslySetInnerHTML={{
-                __html: post.desc
-              }}
-            />
-          </OutboundLink>
-        </div>
-      </Fade>
+          <div
+            className="tnsposts__single__desc"
+            dangerouslySetInnerHTML={{
+              __html: post.desc
+            }}
+          />
+        </OutboundLink>
+      </div>
     ));
 
     return (

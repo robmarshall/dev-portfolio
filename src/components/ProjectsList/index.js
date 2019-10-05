@@ -1,7 +1,5 @@
 import React from "react";
 import ProjectItem from "../ProjectItem";
-import _ from "lodash";
-import Fade from "react-reveal/Fade";
 import "./projectlist.scss";
 
 class ProjectList extends React.Component {
@@ -61,16 +59,14 @@ class ProjectList extends React.Component {
     ];
 
     const projectItems = projects.map(project => (
-      <Fade bottom key={_.kebabCase(project.name)}>
-        <ProjectItem
-          name={project.name}
-          desc={project.desc}
-          imageFileName={project.image}
-          skills={project.skills || []}
-          link={project.link || ""}
-          source={project.source || ""}
-        />
-      </Fade>
+      <ProjectItem
+        name={project.name}
+        desc={project.desc}
+        imageFileName={project.image}
+        skills={project.skills || []}
+        link={project.link || ""}
+        source={project.source || ""}
+      />
     ));
 
     return (
