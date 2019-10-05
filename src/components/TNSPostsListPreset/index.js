@@ -18,12 +18,6 @@ class TNSPostsListPreset extends Component {
           "<p>On October 4th 2018 an article named “Delivering Modern Website Experiences: The Journey to a Content Mesh” was published by Sam Bhagwat on gatsbyjs.org. Sam introduced the concept of a Content Mesh, and touched on the different pieces that are involved. These are my thoughts on it.</p>"
       },
       {
-        title: "Trellis & Bedrock For Fast WordPress Development",
-        slug: "trellis-bedrock-fast-wordpress-dev",
-        desc:
-          "<p>I am continually trying to speedy up and improve my WordPress workflow process. Unlike a lot of JS framework communities, WordPress seems to be a little behind in creating a fast and efficient roll out process. The whole thing seems a little “work it out yourself”. This article covers something that may change that...</p>"
-      },
-      {
         title: "The Inclusive Web – Why It Should Matter to Businesses",
         slug: "the-inclusive-web-why-it-should-matter-to-businesses",
         desc:
