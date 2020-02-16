@@ -3,7 +3,7 @@ import { OutboundLink } from 'gatsby-plugin-google-analytics'
 import './contact.scss'
 
 const Contact = () => (
-    <div className="contact">
+    <div id="contact" className="contact">
         <div className="tight-container">
             <div className="contact__email-link">
                 Want to work together?{' '}
@@ -16,7 +16,9 @@ const Contact = () => (
                 </OutboundLink>
             </div>
             <p>
-                Using modern technologies like Gatsby JS, I build high converting fully accessible websites, that are optimised for search engines and load in the blink of an eye.
+                Using modern technologies like Gatsby JS, I build high
+                converting fully accessible websites, that are optimised for
+                search engines and load in the blink of an eye.
             </p>
             <div className="contact__sub-links">
                 <OutboundLink
