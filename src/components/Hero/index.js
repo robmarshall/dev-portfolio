@@ -25,7 +25,7 @@ const Hero = () => (
                 >
                     fullstack developer
                 </OutboundLink>{' '}
-                living in Leeds, currently working for{' '}
+                living in Leeds - UK, currently working for{' '}
                 <OutboundLink
                     href="https://www.homeagency.co.uk/"
                     target="_blank"
