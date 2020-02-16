@@ -38,10 +38,10 @@ const IndexPage = () => (
             <p>
                 Static sites use significantly less server computing than most
                 other websites due to how they are generated. Rather than
-                relying on servers to generate pages dynamically, pre-render all
-                of them on build and use CDNs for a blazing fast and smooth
-                experience for users all around the globe. This means lower
-                server costs combined with faster pages speeds.
+                relying on servers to generate pages dynamically, Gatsby
+                pre-renders all of them on build and use CDNs for a blazing fast
+                and smooth experience for users all around the globe. This means
+                lower server costs combined with faster pages speeds.
             </p>
             <h2>Increased Security</h2>
             <p>
@@ -56,7 +56,7 @@ const IndexPage = () => (
                 exploited, Gatsby only has the data that it is showing to all
                 users. The safest possible scenario!
             </p>
-            <h2>App Like Experience</h2>
+            <h2>App-like Experience</h2>
             <p>
                 With the performance boost and features to add to the smoothness
                 of the user experience, Gatsby aims at a full app-like
