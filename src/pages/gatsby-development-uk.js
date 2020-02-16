@@ -32,7 +32,7 @@ const IndexPage = () => (
             </p>
             <p>
                 All of the Gatsby sites that I have built for clients have
-                loaded in under 2.5 seconds in test conditions. This is{' '}
+                loaded in under 2.5 seconds in test conditions.
             </p>
             <h2>Reducing Overheads</h2>
             <p>
