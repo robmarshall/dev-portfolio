@@ -25,8 +25,14 @@ const IndexPage = () => (
                 The BBC found that they lost 10% of users for every additional
                 second the website took to load. The Trainline reduced their
                 website load time by 0.3 seconds and increased revenue by an
-                extra £8 million a year. There is no doubt that page speed is a
-                major contributor to business performance.
+                extra £8 million a year. Google found that 53% of mobile users
+                abandon sites that take over 3 seconds to load. There is no
+                doubt that page speed is a major contributor to business
+                performance.
+            </p>
+            <p>
+                All of the Gatsby sites that I have built for clients have
+                loaded in under 2.5 seconds in test conditions. This is{' '}
             </p>
             <h2>Reducing Overheads</h2>
             <p>
