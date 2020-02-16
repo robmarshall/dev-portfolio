@@ -58,10 +58,10 @@ const IndexPage = () => (
             </p>
             <h2>App-like Experience</h2>
             <p>
-                With the performance boost and features to add to the smoothness
-                of the user experience, Gatsby aims at a full app-like
-                experience similar to full PWAs. There are no reloads between
-                pages and the website appears smooth and quick due to
+                With the performance boost and features that increase the
+                smoothness of the user experience, Gatsby aims at a full
+                app-like experience similar to full PWAs.There are no reloads
+                between pages and the website appears smooth and quick due to
                 lazy-loading images and code-splitting.
             </p>
             <h2>Best-of-Breed Solutions</h2>
