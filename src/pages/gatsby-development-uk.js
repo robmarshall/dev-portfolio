@@ -12,7 +12,7 @@ const IndexPage = () => (
             description="Expert Gatsby JS developer based in the UK"
             keywords={['gatsby', 'react']}
         />
-        <div className="tight-container">
+        <div className="gatsby-funnel tight-container">
             <h1>Expert Gatsby JS Development in the UK</h1>
             <p>
                 Gatsby JS is a static site generator that is used to create high
@@ -67,10 +67,10 @@ const IndexPage = () => (
             <h2>Best-of-Breed Solutions</h2>
             <p>
                 Using multiple micro-services (providers such as WordPress,
-                Segment, Stripe) rather one monolithic system (Magento) allows a
-                fully customisable system. They fall into place easily, and the
-                system can be improved and updated without damaging the whole
-                site.
+                Segment, Stripe) rather than one monolithic system (Magento)
+                allows a fully customisable system. They fall into place easily,
+                and the system can be improved and updated without damaging the
+                whole site.
             </p>
             <p>
                 This agile approach allows the business to scale as needed

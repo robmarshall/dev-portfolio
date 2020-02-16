@@ -1,13 +1,15 @@
 @import '../utils/sass/abstracts/abstracts';
 
-h1,
-h2 {
-    margin: em(20) 0 em(10) 0;
-}
+.gatsby-funnel {
+    h1,
+    h2 {
+        margin: em(20) 0 em(10) 0;
+    }
 
-p {
-    margin: em(20) 0;
-    &:last-of-type {
-        margin-bottom: em(40);
+    p {
+        margin: em(20) 0;
+        &:last-of-type {
+            margin-bottom: em(40);
+        }
     }
 }
