@@ -27,12 +27,12 @@ const Hero = () => (
                 </OutboundLink>{' '}
                 living in Leeds, currently working for{' '}
                 <OutboundLink
-                    href="https://www.fox.agency"
+                    href="https://www.homeagency.co.uk/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    title="This link will open up the Fox Agency Website in a new tab"
+                    title="This link will open up the Home Website in a new tab"
                 >
-                    Fox Agency
+                    Home
                 </OutboundLink>
             </h1>
             <SkillList />
