@@ -15,6 +15,9 @@ const Contact = () => (
                     Get in touch!
                 </OutboundLink>
             </div>
+            <p>
+                Using modern technologies like Gatsby JS, I build high converting fully accessible websites, that are optimised for search engines and load in the blink of an eye.
+            </p>
             <div className="contact__sub-links">
                 <OutboundLink
                     href="https://github.com/robmarshall"

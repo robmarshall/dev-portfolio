@@ -12,8 +12,8 @@ const IndexPage = () => (
         <SEO title="Home" keywords={[``]} />
         <Hero />
         <ProjectsList />
-        <TNSPostsListPreset />
         <Contact />
+        <TNSPostsListPreset />
     </Layout>
 )
 

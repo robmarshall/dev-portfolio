@@ -2,7 +2,6 @@
 
 .contact {
     padding: em(20) 0;
-    background-color: #f6f9fc;
 }
 
 .contact__email-link {
@@ -33,7 +32,9 @@
     top: 0;
     position: relative;
     margin: em(10) em(10) 0 0;
+    color: #532ee7;
     &:hover {
+        color: darken(#532ee7, 30%);
         top: em(5);
     }
 }

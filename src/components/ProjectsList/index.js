@@ -8,7 +8,7 @@ class ProjectList extends React.Component {
       {
         name: "Run Leeds",
         desc:
-          "Gatsby frontend, powered by a WordPress backend. A brilliant project to help keep runners running through lifes problems.",
+          "Gatsby frontend with a WordPress CMS. A community project to help keep runners running when faced with lifes problems.",
         image: "runleeds.jpg",
         skills: [
           "html5",
@@ -28,7 +28,7 @@ class ProjectList extends React.Component {
       {
         name: "Thoughts and Stuff Blog",
         desc:
-          "An ongoing project - my blog. Built with a WordPress backend, and a GatbsyJS frontend. Automatically deployed to Netlify from Github.",
+          "A blog covering modern web development technologies and processes. Built with Gatsby and WordPress.",
         image: "tns-project.jpg",
         skills: [
           "html5",
