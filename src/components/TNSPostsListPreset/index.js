@@ -6,7 +6,7 @@ class TNSPostsListPreset extends Component {
     render() {
         const postList = [
             {
-                title: 'Why use Gatsby JS for your website?',
+                title: 'Why Use Gatsby JS for your Website?',
                 slug: 'why-use-gatsby-js-for-your-website',
                 desc:
                     '<p>Want to learn more about Gatsy JS? Considering using it JS for your website? Looking to improve your businesses marketing? This article explains why Gatsby is the right choice, and the benifits that it provides.</p>',
