@@ -7,7 +7,7 @@ import {
     GetCorrectTextColour,
     GetAccessibleBackColor,
 } from '../../utils/helpers/SkillColor'
-import slugify from '../../utils/slugify'
+import slugify from '../../utils/helpers/slugify'
 
 import thirdParty from '../../dataCollections/thirdParty'
 
