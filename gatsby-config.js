@@ -16,39 +16,39 @@ module.exports = {
                 path: `${__dirname}/src/images/`,
             },
         },
-        // {
-        //     resolve: `gatsby-plugin-favicon`,
-        //     options: {
-        //         logo: './src/favicon.png',
-        //
-        //         // WebApp Manifest Configuration
-        //         appName: 'Robert Marshall Developer Portfolio', // Inferred with your package.json
-        //         appDescription:
-        //             'A developer portfolio for Robert Marshall showing latest projects, technologies and contact details',
-        //         developerName: 'Robert Marshall',
-        //         developerURL: 'robertmarshall.dev',
-        //         dir: 'auto',
-        //         lang: 'en-US',
-        //         background: '#fff',
-        //         theme_color: '#fff',
-        //         display: 'standalone',
-        //         orientation: 'any',
-        //         start_url: '/?homescreen=1',
-        //         version: '1.0',
-        //         icons: {
-        //             android: true,
-        //             appleIcon: true,
-        //             appleStartup: true,
-        //             coast: false,
-        //             favicons: true,
-        //             firefox: true,
-        //             opengraph: false,
-        //             twitter: false,
-        //             yandex: false,
-        //             windows: false,
-        //         },
-        //     },
-        // },
+        {
+            resolve: `gatsby-plugin-favicon`,
+            options: {
+                logo: './src/favicon.png',
+
+                // WebApp Manifest Configuration
+                appName: 'Robert Marshall Developer Portfolio', // Inferred with your package.json
+                appDescription:
+                    'A developer portfolio for Robert Marshall showing latest projects, technologies and contact details',
+                developerName: 'Robert Marshall',
+                developerURL: 'robertmarshall.dev',
+                dir: 'auto',
+                lang: 'en-US',
+                background: '#fff',
+                theme_color: '#fff',
+                display: 'standalone',
+                orientation: 'any',
+                start_url: '/?homescreen=1',
+                version: '1.0',
+                icons: {
+                    android: true,
+                    appleIcon: true,
+                    appleStartup: true,
+                    coast: false,
+                    favicons: true,
+                    firefox: true,
+                    opengraph: false,
+                    twitter: false,
+                    yandex: false,
+                    windows: false,
+                },
+            },
+        },
         `gatsby-plugin-sass`,
         `gatsby-transformer-sharp`,
         `gatsby-plugin-sharp`,
@@ -57,6 +57,9 @@ module.exports = {
             options: {
                 lang: 'en',
             },
+        },
+        {
+            resolve: 'gatsby-plugin-preload-fonts',
         },
         {
             resolve: `gatsby-plugin-prefetch-google-fonts`,
@@ -76,6 +79,12 @@ module.exports = {
                 // Puts tracking script in the head instead of the body
                 head: false,
             },
+        },
+        {
+            resolve: 'gatsby-plugin-webpack-bundle-analyzer',
+            options: {
+                // production: true,
+            }
         },
         'gatsby-plugin-offline',
     ],
