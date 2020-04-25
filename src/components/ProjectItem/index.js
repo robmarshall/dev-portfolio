@@ -7,10 +7,10 @@ import {
     GetCorrectTextColour,
     GetAccessibleBackColor,
 } from '../../utils/helpers/SkillColor'
+import slugify from '../../utils/slugify'
 
 import thirdParty from '../../dataCollections/thirdParty'
 
-import _ from 'lodash'
 import './projectitem.scss'
 
 const ProjectItem = ({ name, desc, imageFileName, skills, link, source }) => {
@@ -18,7 +18,7 @@ const ProjectItem = ({ name, desc, imageFileName, skills, link, source }) => {
 
     const skillList = skills.map(skill => (
         <li
-            key={_.kebabCase(thirdParty[skill].title)}
+            key={slugify(thirdParty[skill].title)}
             className="project__skilllist__item"
             style={{
                 backgroundColor: GetAccessibleBackColor(
