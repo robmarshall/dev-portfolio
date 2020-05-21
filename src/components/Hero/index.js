@@ -25,15 +25,7 @@ const Hero = () => (
                 >
                     fullstack developer
                 </OutboundLink>{' '}
-                living in Leeds - UK, currently working for{' '}
-                <OutboundLink
-                    href="https://www.homeagency.co.uk/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    title="This link will open up the Home Website in a new tab"
-                >
-                    Home
-                </OutboundLink>
+                living in Leeds - UK.
             </h1>
             <SkillList />
         </div>
