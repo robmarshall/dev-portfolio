@@ -10,6 +10,9 @@ import './skilllist.scss'
 class SkillList extends React.Component {
     render() {
         const skills = [
+            'aws',
+            'capacitor',
+            'circleci',
             'sass',
             'js',
             'react',
@@ -21,6 +24,8 @@ class SkillList extends React.Component {
             'git',
             'webpack',
             'jest',
+            'netlify',
+            'reacttestinglibrary',
             'storybook',
         ]
 

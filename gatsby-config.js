@@ -49,6 +49,7 @@ module.exports = {
                 },
             },
         },
+        `gatsby-plugin-preact`,
         `gatsby-plugin-sass`,
         `gatsby-transformer-sharp`,
         `gatsby-plugin-sharp`,
@@ -84,7 +85,7 @@ module.exports = {
             resolve: 'gatsby-plugin-webpack-bundle-analyzer',
             options: {
                 // production: true,
-            }
+            },
         },
         'gatsby-plugin-offline',
     ],
