@@ -6,7 +6,7 @@ import Img from 'gatsby-image'
  * https://noahgilmore.com/blog/easy-gatsby-image-components/
  */
 
-const RootImage = props => (
+const RootImage = (props) => (
     <StaticQuery
         query={graphql`
             query {
@@ -29,19 +29,18 @@ const RootImage = props => (
                 }
             }
         `}
-        render={data => {
-            const image = data.images.edges.find(n => {
+        render={(data) => {
+            const image = data.images.edges.find((n) => {
                 return n.node.relativePath.includes(props.filename)
             })
             if (!image) {
                 return null
             }
 
-            const imageSizes = image.node.childImageSharp.fluid
             return (
                 <Img
                     alt={props.alt}
-                    sizes={imageSizes}
+                    fluid={image.node.childImageSharp.fluid}
                     className={props.className}
                 />
             )

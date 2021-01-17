@@ -60,17 +60,16 @@ module.exports = {
             },
         },
         {
-            resolve: 'gatsby-plugin-preload-fonts',
-        },
-        {
-            resolve: `gatsby-plugin-prefetch-google-fonts`,
+            resolve: `gatsby-plugin-webfonts`,
             options: {
-                fonts: [
-                    {
-                        family: `Open Sans`,
-                        variants: [`300`, `400`, `700`, `900`],
-                    },
-                ],
+                fonts: {
+                    google: [
+                        {
+                            family: 'Open Sans',
+                            variants: [`300`, `400`, `700`, `900`],
+                        },
+                    ],
+                },
             },
         },
         {

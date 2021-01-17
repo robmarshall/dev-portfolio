@@ -23,7 +23,7 @@ const Hero = () => (
                     rel="noopener noreferrer"
                     title="This link will open up GitHub in a new tab"
                 >
-                    fullstack developer
+                    frontend developer
                 </OutboundLink>{' '}
                 living in Leeds - UK.
             </h1>

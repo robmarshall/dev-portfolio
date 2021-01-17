@@ -31,25 +31,36 @@ class SkillList extends React.Component {
 
         skills.sort()
 
-        let skillList = skills.map(skill => (
-            <li key={thirdParty[skill].title} className="skilllist__item">
-                <OutboundLink
-                    className="skilllist__item__link"
-                    title={`External link to ${thirdParty[skill].title}`}
-                    href={thirdParty[skill].link}
-                    style={{
-                        backgroundColor: GetAccessibleBackColor(
-                            thirdParty[skill].color
-                        ),
-                        color: GetCorrectTextColour(thirdParty[skill].color),
-                    }}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    {thirdParty[skill].title}
-                </OutboundLink>
-            </li>
-        ))
+        let skillList = skills.map((skill) => {
+            if (thirdParty[skill]) {
+                return (
+                    <li
+                        key={thirdParty[skill].title}
+                        className="skilllist__item"
+                    >
+                        <OutboundLink
+                            className="skilllist__item__link"
+                            title={`External link to ${thirdParty[skill].title}`}
+                            href={thirdParty[skill].link}
+                            style={{
+                                backgroundColor: GetAccessibleBackColor(
+                                    thirdParty[skill].color
+                                ),
+                                color: GetCorrectTextColour(
+                                    thirdParty[skill].color
+                                ),
+                            }}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            {thirdParty[skill].title}
+                        </OutboundLink>
+                    </li>
+                )
+            }
+
+            return null
+        })
 
         return (
             <div className="skilllist">
