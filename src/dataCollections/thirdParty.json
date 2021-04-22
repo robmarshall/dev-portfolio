@@ -19,6 +19,11 @@
         "color": "#161616",
         "link": "https://circleci.com/"
     },
+    "cypress": {
+        "title": "Cypress",
+        "color": "#49494c",
+        "link": "https://www.cypress.io/"
+    },
     "es6": {
         "title": "ES6",
         "color": "#F7DF1E",

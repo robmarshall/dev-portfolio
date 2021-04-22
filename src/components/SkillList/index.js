@@ -13,6 +13,7 @@ class SkillList extends React.Component {
             'aws',
             'capacitor',
             'circleci',
+            'cypress',
             'sass',
             'js',
             'react',
